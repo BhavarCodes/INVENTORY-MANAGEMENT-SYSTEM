@@ -1,0 +1,117 @@
+.sales-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filters .filters-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+@media (max-width: 1024px) {
+  .filters .filters-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  .filters .filters-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.metric .metric-label {
+  font-size: var(--font-size-sm);
+  color: var(--neutral-600);
+}
+
+.metric .metric-value {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  margin-top: var(--space-2);
+}
+
+.breakdown-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.breakdown-item {
+  background: var(--neutral-50);
+  border: 1px solid var(--neutral-200);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+}
+
+.breakdown-label {
+  font-size: var(--font-size-sm);
+  color: var(--neutral-600);
+  margin-bottom: var(--space-2);
+}
+
+.breakdown-value {
+  font-weight: var(--font-weight-semibold);
+}
+
+.top-products {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+@media (max-width: 1024px) {
+  .top-products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.top-item {
+  background: var(--neutral-50);
+  border: 1px solid var(--neutral-200);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+}
+
+.top-name {
+  font-weight: var(--font-weight-semibold);
+}
+
+.top-meta {
+  color: var(--neutral-600);
+  margin-top: var(--space-2);
+}
+
+.table thead th {
+  text-align: left;
+  color: var(--neutral-700);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+}
+
+.table tbody td {
+  padding: var(--space-3) var(--space-2);
+  border-top: 1px solid var(--neutral-200);
+}
+
+.pager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: var(--space-4);
+}
+
+.muted { color: var(--neutral-500); }
