@@ -23,7 +23,6 @@ import Layout from './components/layout/Layout';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import Analytics from './components/analytics/Analytics';
 import Settings from './components/settings/Settings';
-import DebugAuth from './components/DebugAuth';
 import Sales from './components/sales/Sales';
 
 // Styles
@@ -60,10 +59,6 @@ function AppContent() {
           <Route 
             path="/auth/callback" 
             element={<AuthCallback />} 
-          />
-          <Route 
-            path="/debug" 
-            element={<DebugAuth />} 
           />
           <Route
             path="/"

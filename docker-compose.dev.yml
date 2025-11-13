@@ -35,9 +35,9 @@ services:
       JWT_EXPIRE: 7d
       EMAIL_HOST: smtp.gmail.com
       EMAIL_PORT: 587
-      EMAIL_USER: your_email@gmail.com
+      EMAIL_USER: owner@gmail.com
       EMAIL_PASS: your_app_password
-      VENDOR_EMAIL: vendor@example.com
+      VENDOR_EMAIL: vendor@gmail.com
       LOW_STOCK_THRESHOLD: 10
     depends_on:
       - mongodb

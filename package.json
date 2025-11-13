@@ -11,15 +11,12 @@
     "build": "cd frontend && npm run build",
     "start": "cd backend && npm start",
     "seed": "cd backend && npm run seed",
-    "test:auth": "node test-auth.js",
-    "start:dev": "node start-dev.js",
     "lint": "eslint . --ext .js,.jsx",
     "lint:fix": "eslint . --ext .js,.jsx --fix",
     "format": "prettier --write .",
     "docker:dev": "docker-compose -f docker-compose.dev.yml up",
     "docker:prod": "docker-compose up",
-    "docker:build": "docker-compose build",
-    "setup": "chmod +x scripts/setup.sh && ./scripts/setup.sh"
+    "docker:build": "docker-compose build"
   },
   "keywords": [
     "inventory",

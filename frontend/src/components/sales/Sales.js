@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import { API_ENDPOINTS } from '../../config/api';
@@ -24,8 +24,6 @@ const Sales = () => {
   const [total, setTotal] = useState(0);
   const [paymentMethod, setPaymentMethod] = useState('');
   const [status, setStatus] = useState('completed');
-
-  const qs = useMemo(() => ({ from, to, page, limit, paymentMethod, status }), [from,to,page,limit,paymentMethod,status]);
 
   const fetchAll = async () => {
     setLoading(true);
